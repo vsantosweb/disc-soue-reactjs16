@@ -1,0 +1,173 @@
+@use 'sass:map';
+@import 'variables.scss';
+// TESTE
+/* Primary */
+.bg-primary{
+    background-color: map-get($theme-colors, "primary")!important;
+}
+.text-primary{
+    color: map-get($theme-texts, "primary")!important;
+}
+svg.waves.primary path{
+    fill: map-get($theme-colors, "primary")!important;
+}
+svg.waves.primary path:nth-child(2n+1){
+    fill: map-get($theme-texts, "primary")!important;
+}
+
+
+/* Secondary */
+.bg-secondary{
+    background-color: map-get($theme-colors, "secondary")!important;
+}
+.text-secondary{
+    color: map-get($theme-texts, "secondary")!important;
+}
+svg.waves.secondary path{
+    fill: map-get($theme-colors, "secondary")!important;
+}
+svg.waves.secondary path:nth-child(2n+1){
+    fill: map-get($theme-texts, "secondary")!important;
+}
+
+
+// Purple
+.bg-purple{
+    background-color: map-get($theme-colors, "purple")!important;
+}
+.text-purple{
+    color: map-get($theme-texts, "purple")!important;
+}
+svg.waves.purple path{
+    fill: map-get($theme-colors, "purple")!important;
+}
+svg.waves.purple path:nth-child(2n+1){
+    fill: map-get($theme-texts, "purple")!important;
+}
+
+// Magenta
+.bg-magenta{
+    background-color: map-get($theme-colors, "magenta")!important;
+}
+.text-magenta{
+    color: map-get($theme-texts, "magenta")!important;
+}
+svg.waves.magenta path{
+    fill: map-get($theme-colors, "magenta")!important;
+}
+svg.waves.magenta path:nth-child(2n+1){
+    fill: map-get($theme-texts, "magenta")!important;
+}
+
+
+// Green
+.bg-green{
+    background-color: map-get($theme-colors, "green")!important;
+}
+.text-green{
+    color: map-get($theme-texts, "green")!important;
+}
+svg.waves.green path{
+    fill: map-get($theme-colors, "green")!important;
+}
+svg.waves.green path:nth-child(2n+1){
+    fill: map-get($theme-texts, "green")!important;
+}
+
+.form-check {
+    .checkbox {
+        display: flex;
+        opacity: .7;
+        font-weight: 600;
+        --background: #fff;
+        --border: #d1d6ee;
+        --border-hover: #bbc1e1;
+        --border-active: #007CBA;
+        --tick: #fff;
+        position: relative;
+        align-self: center;
+        input {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            position: relative;
+            outline: none;
+            background: var(--background);
+            border: none;
+            margin: 0;
+            padding: 0;
+            cursor: pointer;
+            border-radius: 4px;
+            -webkit-transition: box-shadow 0.3s;
+            transition: box-shadow 0.3s;
+            box-shadow: inset 0 0 0 var(--s, 1px) var(--b, var(--border));
+            width: 21px;
+            height: 21px;
+            display: block;
+            margin-right: 10px;
+            &:hover {
+                --s: 2px;
+                --b: var(--border-hover);
+            }
+            &:checked {
+                --b: var(--border-active);
+            }
+        }
+        svg {
+            width: 21px;
+            height: 21px;
+            display: block;
+            margin-right: 10px;
+            pointer-events: none;
+            fill: none;
+            stroke-width: 2px;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke: var(--stroke, var(--border-active));
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 21px;
+            height: 21px;
+            -webkit-transform: scale(var(--scale, 1)) translateZ(0);
+            transform: scale(var(--scale, 1)) translateZ(0);
+        }
+    }
+    .checkbox.path {
+        input {
+            &:checked {
+                --s: 2px;
+                -webkit-transition-delay: 0.4s;
+                transition-delay: 0.4s;
+                + {
+                    svg {
+                        --a: 16.1 86.12;
+                        --o: 102.22;
+                    }
+                }
+            }
+        }
+        svg {
+            stroke-dasharray: var(--a, 86.12);
+            stroke-dashoffset: var(--o, 86.12);
+            -webkit-transition: stroke-dasharray 0.6s, stroke-dashoffset 0.6s;
+            transition: stroke-dasharray 0.6s, stroke-dashoffset 0.6s;
+        }
+    }
+    .checkbox.bounce {
+        --stroke: var(--tick);
+        input {
+            &:checked {
+                --s: 11px;
+                + {
+                    svg {
+                        -webkit-animation: bounce 0.4s linear forwards 0.2s;
+                        animation: bounce 0.4s linear forwards 0.2s;
+                    }
+                }
+            }
+        }
+        svg {
+            --scale: 0;
+        }
+    }
+}

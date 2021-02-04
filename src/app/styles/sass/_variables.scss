@@ -1,10 +1,23 @@
+$theme-colors: (
+    "primary": #2C7FCB,
+    "secondary":#DF8430,
+    "purple": #9B51E0,
+    "magenta":#D0417E,
+    "green": #219653,
+);
 
-$primaryColor: #673ab7;
-$primaryColorLight: #c12127;
-$secondaryColor:#9c27b0;
-$secondaryColorLight:#f79517;
-$ternaryColorLight:#10deff;
-$ternaryColor:#143346;
+$theme-texts: (
+    "primary": #70B6F5,
+    "secondary":#F6B87E,
+    "purple": #D485F1,
+    "magenta": #ED76A9,
+    "green": #6FCF97,
+);
 
+$theme-btn:(
+    "secondary":#FA993F,
+);
 
-$defaultBorderRadius: 0;
+$border-radius:25px;
+// TESTE
+
