@@ -1,0 +1,74 @@
+.dashboardCard {
+  cursor: pointer;
+  min-height: 300px;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+}
+.dashboardCard .content {
+  padding: 25px;
+}
+.dashboardCard .content h2 {
+  text-align: center;
+  font-size: 120px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.dashboardCard .content .sub {
+  transition: bottom 0.3s;
+  position: absolute;
+  bottom: 0px;
+}
+.dashboardCard .content .sub h3 {
+  font-size: 45px;
+  font-weight: 600;
+  margin: 0;
+}
+.dashboardCard .content .sub small {
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+.dashboardCard:hover {
+  animation: bounce-card infinite 2s;
+}
+.dashboardCard:hover .content .sub {
+  transition: bottom 0.3s;
+  bottom: 15px;
+}
+.dashboardCard:hover .content .sub small {
+  transition: opacity 0.3s;
+  opacity: 1;
+}
+.dashboardCard svg {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+@media (max-width: 993px) {
+  #primary {
+    background-color: #2C7FCB;
+  }
+
+  #secondary {
+    background-color: #DF8430;
+  }
+
+  #magenta {
+    background-color: #D0417E;
+  }
+}
+@keyframes bounce-card {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/*# sourceMappingURL=cards.css.map */

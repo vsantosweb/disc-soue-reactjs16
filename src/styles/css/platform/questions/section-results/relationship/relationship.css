@@ -1,0 +1,19 @@
+.result .profile .relationship .titlePage.disc span {
+  border-radius: 0;
+  padding-left: 100px;
+}
+.result .profile .relationship .texts {
+  padding-bottom: 0;
+}
+.result .profile .relationship .texts .subtitle {
+  color: #F7310F;
+}
+.result .profile .relationship .texts p {
+  margin-top: 15px;
+}
+.result .profile .relationship .texts ul {
+  padding: 0;
+  padding-top: 15px;
+}
+
+/*# sourceMappingURL=relationship.css.map */

@@ -1,0 +1,66 @@
+.result .endResult .header {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 50px;
+  text-align: right;
+  margin-top: 100px;
+}
+@media (max-width: 765px) {
+  .result .endResult .header {
+    display: block;
+  }
+}
+.result .endResult .header h2 {
+  font-size: 5.3em;
+  color: #4C97BE;
+  font-weight: 600;
+  text-align: right;
+}
+.result .endResult .header a {
+  font-size: 1.3em;
+  color: #F7310F;
+  font-weight: 600;
+}
+.result .endResult .header .texts {
+  text-align: justify;
+  width: 50%;
+}
+.result .endResult footer {
+  margin-top: -50px;
+}
+.result .endResult footer .logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 600px;
+}
+.result .endResult footer .logo img {
+  width: 230px;
+}
+@media (max-width: 992px) {
+  .result .endResult footer .logo {
+    top: 450px;
+  }
+  .result .endResult footer .logo img {
+    width: 150px;
+  }
+}
+@media (max-width: 765px) {
+  .result .endResult footer .logo {
+    top: 350px;
+  }
+}
+.result .endResult footer svg.background .st1 {
+  fill: #4C97BE;
+  transform: translateX(-40px) scale(1.2);
+}
+.result .endResult footer svg.background .st0 {
+  fill: #F7310F;
+  transform: translateX(33px);
+}
+
+/*# sourceMappingURL=endresult.css.map */

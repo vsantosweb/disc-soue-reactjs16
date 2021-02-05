@@ -1,0 +1,21 @@
+.result .profile .efficiency .features {
+  border-top: 2px solid #F7310F;
+}
+.result .profile .efficiency .features span {
+  color: #F7310F;
+  font-weight: 600;
+  background-color: #f9f9f9;
+  padding-right: 10px;
+  top: -17px;
+  position: relative;
+  font-size: 1.1em;
+}
+.result .profile .efficiency .features .texts p {
+  font-weight: 400;
+}
+.result .profile .efficiency .features .texts ul {
+  font-weight: 600;
+  padding: 0;
+}
+
+/*# sourceMappingURL=efficiency.css.map */

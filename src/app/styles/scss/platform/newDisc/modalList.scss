@@ -1,0 +1,50 @@
+@import "../../variables.scss";
+.modalList .modal-content {
+    border-radius: 15px;
+    border: none;
+    .modal-header {
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        span {
+            color: white;
+        }
+    }
+    .modal-body {
+        h4,
+        small {
+            font-weight: 600;
+        }
+        h4,
+        p {
+            opacity: 0.8;
+        }
+        .bodyHeader {
+            small {
+                background-color: #cccccc54;
+                padding: 8px;
+                border-radius: 15px;
+            }
+        }
+        .newRespondents {
+            form {
+                .input-group-text {
+                    border-radius: 5px 0 0 5px;
+                }
+                .form-control {
+                    padding: 5px;
+                    height: 50px;
+                    border-radius: 0 5px 5px 0;
+                }
+                .rowRespondet{
+                }
+            }
+        }
+    }
+    .modal-footer {
+        border: none;
+        #createList{
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+    }
+}

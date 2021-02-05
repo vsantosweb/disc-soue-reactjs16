@@ -1,0 +1,17 @@
+.result .profile .priority .texts {
+  border-top: 2px solid #F7310F;
+  padding: 0px 0 15px 0;
+}
+.result .profile .priority .texts .title {
+  background-color: #F7310F;
+  padding: 5px;
+  position: relative;
+  top: -15px;
+  font-weight: 600;
+  color: white;
+}
+.result .profile .priority .texts p {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=priority.css.map */

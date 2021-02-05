@@ -1,0 +1,66 @@
+@import './variables.scss';
+.result .endResult {
+    .header{
+        align-items: flex-end;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        padding: 50px;
+        text-align: right;
+        margin-top: 100px;
+        @media (max-width:765px) {
+            display: block;
+        }
+        h2{
+            font-size: 5.3em;
+            color: $text-primary;
+            font-weight: 600;
+            text-align: right;
+        }
+        a{
+           font-size: 1.3em;
+           color: $background-secondary;
+           font-weight: 600;
+        }
+        .texts{
+            text-align: justify;
+            width: 50%;
+        }
+    }
+    footer{
+        margin-top: -50px;
+        .logo{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 600px;
+            img{
+                width: 230px;
+            }
+            @media (max-width:992px) {
+                top: 450px;
+                img{
+                    width: 150px;
+                }
+            }
+            @media (max-width:765px) {
+                top: 350px;
+            }
+           
+            
+            
+        }
+        svg.background{
+            .st1{
+                fill: $text-primary;
+                transform: translateX(-40px) scale(1.2);
+            }
+            .st0{
+                fill: $background-secondary;
+                transform: translateX(33px);
+            }
+        }
+    }
+}

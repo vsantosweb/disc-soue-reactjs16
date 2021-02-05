@@ -1,0 +1,23 @@
+@import '../variables.scss';
+.result .profile .relationship{
+    .titlePage.disc{
+        span{
+            border-radius: 0;
+            padding-left: 100px;
+        }
+    }
+    .texts{
+        padding-bottom: 0;
+        .subtitle{
+            color: $background-secondary; 
+         }
+        p{
+            margin-top: 15px;
+        }
+        ul{
+            padding: 0;
+            padding-top: 15px;
+        }
+
+    }
+}

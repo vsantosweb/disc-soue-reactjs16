@@ -1,0 +1,392 @@
+@import "../variables.scss";
+/* EXCEPTIONS */
+
+/* HAVES1 */
+@keyframes moveWave1 {
+	from {
+		transform: translateX(-750px);
+	}
+}
+@keyframes moveWave2 {
+	from {
+		transform: translateX(-650px);
+	}
+}
+@keyframes moveWave3 {
+	from {
+		transform: translateX(-550px);
+	}
+}
+
+/* WAVES2 */
+@keyframes platformSectionMoveWave1{
+	from {
+		transform: translateX(750px);
+	}
+}
+@keyframes platformSectionMoveWave2{
+	from {
+		transform: translateX(650px);
+	}
+}
+@keyframes platformSectionMoveWave3 {
+	from {
+		transform: translateX(550px);
+	}
+}
+
+/* MEDIAS */
+body {
+	overflow-x: hidden !important;
+	font-family: 'Montserrat', sans-serif !important;
+}
+main{
+	margin-top: 65px;
+}
+.homeSite{
+	.hero {
+		height: 100vh;
+		.titles {
+			.camaleao {
+				position: relative;
+				top: 275px;
+				left: -5px;
+				svg {
+					>* {
+						transition-timing-function: ease-in;
+						transition: 3s;
+						transition-delay: 1s;
+					}
+					&:hover {
+						>* {
+							fill: rgba(247, 247, 247, 0.493);
+							stroke: rgba(247, 247, 247, 0.493);
+							transition: .3s;
+							transition-timing-function: ease-in;
+						}
+					}
+					width: 550px;
+					transform: scaleX(-1);
+					left: -323px;
+					position: relative;
+					padding: 100px;
+					z-index: 1;
+				}
+				.eye {
+					background: black;
+					border-radius: 50%;
+					position: absolute;
+					height: 12px;
+					width: 12px;
+					transform-origin: center left;
+					margin-left: -458px;
+					margin-top: 152px;
+					z-index: 2;
+				}
+			}
+			position: relative;
+			top: 15%;
+			transform: translateY(-50%);
+			h4 {
+				opacity: .7;
+				letter-spacing: 15px;
+				font-size: 48px;
+			}
+			h1 {
+				font-weight: 600;
+				font-size: 72px;
+				letter-spacing: 50px;
+				color: var(--secondary-text-color);
+				margin-bottom: 0;
+				margin-left: 25px;
+			}
+			p {
+				font-weight: 300;
+				opacity: .7;
+			}
+		}
+		.waves {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			width: 200%;
+			z-index: -1;
+			margin-bottom: -66px;
+			.wave1 {
+				animation: moveWave1 30s ease-in-out infinite alternate;
+			}
+			.wave2 {
+				animation: moveWave2 45s ease-in-out .5s infinite alternate;
+			}
+			.wave3 {
+				animation: moveWave3 50s ease-in-out .10s infinite alternate;
+			}
+		}
+	}
+}
+.platformSection {
+	.content {
+		background-color: map-get($theme-colors ,"primary" );
+		padding: 0 85px;
+		.texts {
+			align-self: center;
+			margin-bottom: 25px;
+			text-align: justify;
+			p {
+				color: white;
+				font-weight: 600;
+				font-size: 17px;
+				margin-top: 25px;
+			}
+		}
+	}
+	h3 {
+		font-size: 72px;
+		font-weight: 600;
+		margin-bottom: 70px;
+	}
+	.content.bg-white {
+		padding: 0 200px;
+		margin-top: -15px;
+		h3 {
+			margin-bottom: 0;
+		}
+		.title {
+			font-size: 24px;
+			margin-bottom: 15px;
+		}
+		.icon {
+			width: 80%;
+			text-align: center;
+		}
+		.description {
+			font-size: 14px;
+			font-weight: 600;
+			opacity: .7;
+		}
+	}
+	.waves.reverse {
+		transform: scaleY(-1);
+		position: relative;
+		bottom: 0;
+		right: 1500px;
+		width: 200%;
+		z-index: -1;
+		margin-top: -15px;
+	}
+	.waves {
+		.wave2 {
+			animation: platformSectionMoveWave2 45s ease-in-out .5s infinite alternate;
+		}
+		.wave3 {
+			animation: platformSectionMoveWave3 50s ease-in-out .10s infinite alternate;
+		}
+	}
+}
+.platformSection.cursos {
+	.content {
+		.texts {
+			margin-bottom: 300px;
+			p {
+				color: white;
+				font-weight: 600;
+				font-size: 14px;
+			}
+		}
+		.icon {
+			margin-top: -120px;
+			margin-bottom: 250px;
+		}
+	}
+	svg.inverse {
+		transform: scale(-1, -1);
+	}
+	.library {
+		width: 100%;
+		padding: 0 250px;
+		margin-top: -400px;
+		position: relative;
+		h3 {
+			font-size: 36px;
+		}
+		.canvas {
+			display: flex;
+			height: 600px;
+			.video {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
+.training {
+	.section2 {
+		img {
+			max-width: 50% !important;
+		}
+	}
+}
+.cursos {
+	.section2 {
+		h4 {
+			font-weight: 700;
+			font-size: 45px;
+			opacity: .75;
+		}
+		.video {
+			width: 100%;
+			height: 500px;
+		}
+		.classDate {
+			.title {
+				font-size: 15px;
+				font-weight: 600;
+				opacity: .5;
+				margin-bottom: 0;
+			}
+			.description {
+				font-size: 22px;
+				font-weight: 600;
+				margin-top: 0;
+			}
+		}
+    }
+    .platformSection {
+		.waves {
+			.wave1 {
+				animation: platformSectionMoveWave1 30s ease-in-out infinite alternate;
+			}
+		}
+	}
+}
+
+@media ( max-width:1510px) {
+	.platformSection {
+		.waves {
+			right: 1200px;
+		}
+		.content.bg-white {
+			padding: 0 25px;
+		}
+	}
+}
+@media ( max-width:1198px) {
+	.platformSection {
+		.waves {
+			right: 1000px;
+		}
+	}
+	.platformSection.cursos {
+		.content {
+			.texts {
+				margin-bottom: 25px;
+			}
+			.icon {
+				margin-top: 0;
+			}
+		}
+		.library {
+			width: 100%;
+			padding: 0 85px;
+			margin-top: -300px;
+		}
+	}
+}
+@media ( max-width:1024px) {
+	.platformSection {
+		.waves {
+			right: 800px;
+		}
+		.content {
+			padding: 0 25px;
+		}
+		.content.bg-white {
+			padding: 0 25px;
+		}
+	}
+}
+@media ( max-width:810px) {
+	.platformSection {
+		.waves {
+			right: 700px;
+		}
+	}
+}
+@media ( max-width:768px) {
+	.hero {
+		.titles {
+			h4 {
+				font-size: 38px;
+				letter-spacing: 8px !important;
+			}
+			h1 {
+				font-size: 58px;
+				letter-spacing: 40px !important;
+				margin-left: 25px;
+			}
+		}
+	}
+	// h3 {
+	// 	font-size: 36px !important;
+	// }
+	// p {
+	// 	font-size: 11px !important;
+	// }
+	a.btnLink {
+		font-size: .7rem;
+	}
+	.platformSection {
+		h3 {
+			margin-bottom: 0px;
+		}
+		.content.bg-white {
+			margin-top: 0px;
+			.title {
+				font-size: 20px !important;
+			}
+			.icon {
+				width: 50% !important;
+			}
+		}
+	}
+	.platformSection.cursos {
+		.library {
+			padding: 0 25px;
+			h3 {
+				font-size: 24px !important;
+				margin-top: 25px;
+			}
+		}
+	}
+}
+@media ( max-width:714px) {
+	.platformSection {
+		.waves {
+			right: 500px;
+		}
+	}
+}
+@media ( max-width:510px) {
+	.platformSection {
+		.waves {
+			right: 400px;
+		}
+	}
+}
+@media ( max-width:425px) {
+	.platformSection.cursos {
+		.library {
+			.canvas {
+				height: 400px;
+			}
+		}
+	}
+}
+@media ( max-width:405px) {
+	.platformSection {
+		.waves {
+			right: 320px;
+		}
+	}
+}

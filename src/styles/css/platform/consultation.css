@@ -1,0 +1,100 @@
+.consultation .platformSection .menuFilters {
+  transition: all 0.5s;
+  min-width: 20%;
+  z-index: 2;
+}
+.consultation .platformSection .menuFilters.fixed {
+  position: fixed;
+  top: 100px;
+  background-color: white;
+  padding: 100px 30px 30px 30px;
+  transform: translate(-48px, -80px);
+  overflow: scroll;
+  height: 100vh;
+}
+.consultation .platformSection .menuFilters.fixed.minimized {
+  width: 100px;
+  min-width: 100px;
+  overflow: hidden;
+  background-color: none;
+}
+.consultation .platformSection .menuFilters.minimized {
+  margin-right: 15px;
+  transition: all 0.5s;
+  width: 50px;
+  min-width: 50px;
+}
+.consultation .platformSection .menuFilters.minimized .titles {
+  display: block;
+  justify-content: space-between;
+}
+.consultation .platformSection .menuFilters.minimized .titles h2 {
+  display: none;
+}
+.consultation .platformSection .menuFilters.minimized .titles .arrow {
+  transition: all 0.5s;
+  transform: rotate(180deg);
+  background-color: #ccc;
+  border-radius: 5px;
+}
+.consultation .platformSection .menuFilters.minimized .titles .arrow:hover {
+  transform: translateX(15px) rotate(180deg);
+}
+.consultation .platformSection .menuFilters.minimized form {
+  transition: all 0.3s;
+  opacity: 0;
+}
+@media (max-width: 1150px) {
+  .consultation .platformSection .menuFilters {
+    position: fixed !important;
+    width: 500px;
+    min-width: 500px;
+    top: 100px;
+    background-color: white;
+    padding: 100px 30px 30px 30px;
+    transform: translate(-48px, -80px);
+    overflow: scroll;
+    height: 100vh;
+  }
+  .consultation .platformSection .menuFilters.minimized {
+    width: 150px !important;
+    min-width: 150px !important;
+    background-color: transparent !important;
+    transform: translate(-97px, -80px);
+    overflow: hidden;
+  }
+  .consultation .platformSection .menuFilters.minimized .arrow {
+    height: 100%;
+    align-self: center;
+    opacity: 0.7;
+  }
+  .consultation .platformSection .menuFilters.minimized .arrow:hover {
+    transition: transform 0.5s;
+    cursor: pointer;
+    opacity: 1;
+    transform: translateX(-15px);
+  }
+}
+@media (max-width: 500px) {
+  .consultation .platformSection .menuFilters {
+    width: 100%;
+    min-width: 100%;
+  }
+  .consultation .platformSection .menuFilters.minimized {
+    width: 100px !important;
+    min-width: 100px !important;
+    background-color: transparent !important;
+    transform: translate(-97px, -80px);
+    overflow: hidden;
+  }
+}
+.consultation .platformSection .menuFilters .titles {
+  display: flex;
+  justify-content: space-between;
+}
+.consultation .platformSection .menuFilters form {
+  transition: all 0.5s;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=consultation.css.map */

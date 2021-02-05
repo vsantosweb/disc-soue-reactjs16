@@ -1,0 +1,38 @@
+@import './variables.scss';
+
+.result .profile .discStyle{
+    .titlePage.disc{
+        svg line{
+            stroke: $background-secondary;
+        }
+        span{
+            background-color: $background-secondary;
+        }
+    }
+    .texts{
+        padding: 25px 50px;
+        p{
+            font-weight: 400;
+        }
+        .footer{
+            p{
+                margin-bottom: 0;
+                font-weight: 600;
+            }
+            .priority{
+                color: $background-secondary;
+                font-weight: 600;
+                text-transform: uppercase;
+                span{
+                    padding: 0 5px ;
+                    &:first-child{
+                        border-right: 2px solid $background-secondary;
+                    }
+                    &:last-child{
+                        border-left: 2px solid $background-secondary;
+                    }
+                }
+            }
+        }
+    }
+}

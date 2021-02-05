@@ -1,0 +1,17 @@
+.result .profile ul {
+  padding-left: 0;
+  list-style-type: none;
+  padding: 25px 50px;
+}
+.result .profile ul.profileTable li {
+  padding: 15px 30px;
+}
+.result .profile ul.profileTable li:nth-child(even) {
+  background-color: #4C97BE;
+  color: white;
+}
+.result .profile ul.profileTable li:nth-child(odd) {
+  background-color: white;
+}
+
+/*# sourceMappingURL=profile.css.map */

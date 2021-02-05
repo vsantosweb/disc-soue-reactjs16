@@ -1,0 +1,26 @@
+.consultation .platformSection .content .customTable .pagination {
+  z-index: 0;
+}
+.consultation .platformSection .content .customTable .pagination .page-item a,
+.consultation .platformSection .content .customTable .pagination .page-item span {
+  border-radius: 5px;
+}
+.consultation .platformSection .content .customTable .pagination .page-item a {
+  border-color: #F6B87E;
+  color: #DF8430;
+  opacity: 0.7;
+}
+.consultation .platformSection .content .customTable .pagination .page-item a:focus {
+  box-shadow: none;
+}
+.consultation .platformSection .content .customTable .pagination .page-item a:hover {
+  background-color: initial;
+  opacity: 1;
+}
+.consultation .platformSection .content .customTable .pagination .page-item.active span {
+  background-color: #DF8430;
+  border-color: #DF8430;
+  margin: 0 15px;
+}
+
+/*# sourceMappingURL=pagination.css.map */

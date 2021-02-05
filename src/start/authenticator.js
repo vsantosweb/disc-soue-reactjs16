@@ -11,6 +11,7 @@
 import Cookie from 'js-cookie';
 import axios from 'axios';
 import auth from '../config/auth';
+import { trackPromise } from 'react-promise-tracker';
 
 export default class Authenticator {
 
@@ -25,7 +26,7 @@ export default class Authenticator {
 
     static signIn = async (credentials) => {
 
-        return axios.post(auth.authURL, credentials)
+        let data = axios.post(auth.authURL, credentials)
             .then((response) => {
                 Authenticator.setSession('cookie', response.data.data);
                 window.location.reload();
@@ -33,6 +34,10 @@ export default class Authenticator {
 
             })
             .catch(error => error.response)
+
+            trackPromise(data, 'signIn');
+
+            return data;
     }
     static signOut = async () => {
 

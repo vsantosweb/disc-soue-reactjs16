@@ -1,0 +1,100 @@
+$menuWidth: 80px;
+
+.consultation{
+    .platformSection{
+        .menuFilters{
+            transition: all .5s;
+            min-width: 20%;
+            z-index: 2;
+            &.fixed{
+                position: fixed;
+                top: 100px;
+                background-color: white;
+                padding: 100px 30px 30px 30px;
+                transform: translate(-48px, -80px);
+                overflow: scroll;
+                height: 100vh;
+                &.minimized{
+                    width: 100px ;
+                    min-width: 100px;
+                    overflow: hidden;
+                    background-color: none;
+                }
+            }
+            &.minimized{
+                margin-right: 15px;
+                transition: all .5s;
+                width: 50px ;
+                min-width: 50px;
+                .titles{
+                    display: block;
+                    justify-content: space-between;
+                    h2{
+                        display: none;
+                    }
+                    .arrow{
+                        transition: all .5s;
+                        transform: rotate(180deg);
+                        background-color: #ccc;
+                        border-radius: 5px;
+                        &:hover{
+                            transform: translateX(15px) rotate(180deg);
+                        }
+                    }
+                }
+                form{
+                    transition: all .3s;
+                    opacity: 0;
+                }
+            }
+            @media(max-width: 1150px){
+                position: fixed!important;
+                width: 500px;
+                min-width: 500px;
+                top: 100px;
+                background-color: white;
+                padding: 100px 30px 30px 30px;
+                transform: translate(-48px, -80px);
+                overflow: scroll;
+                height: 100vh;
+                &.minimized{
+                    width: 150px !important;
+                    min-width: 150px!important;
+                    background-color: transparent!important;
+                    transform: translate(-97px, -80px);
+                    overflow: hidden;
+                    .arrow{
+                        height: 100%;
+                        align-self: center;
+                        opacity: .7;
+                        &:hover{
+                            transition: transform .5s;
+                            cursor: pointer;
+                            opacity: 1;
+                            transform: translateX(-15px);
+                        }
+                    }
+                }
+            }
+            @media(max-width: 500px){
+                width: 100%;
+                min-width: 100%;
+                &.minimized{
+                    width: 100px !important;
+                    min-width: 100px!important;
+                    background-color: transparent!important;
+                    transform: translate(-97px, -80px);
+                    overflow: hidden;
+                }
+            }
+            .titles{
+                display: flex;
+                justify-content: space-between;
+            }
+            form{
+                transition: all .5s;
+                opacity: 1;
+            }
+        }
+    }
+}

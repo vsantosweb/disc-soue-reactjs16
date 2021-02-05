@@ -1,0 +1,53 @@
+@use 'sass:map';
+@import "../variables.scss";
+
+.yourList {
+    .cardsContainer {
+        min-height: 400px;
+    }
+    .containerCard {
+        min-height: 150px;
+        .card {
+            transition: 0.2s;
+            max-height: 100px;
+            border-radius: 15px;
+            background-color: rgba(0, 0, 0, 2%);
+            border: none;
+            &.checked {
+                border: 3px solid map-get($theme-texts, "secondary");
+            }
+            .card-body {
+                transition: opacity 0.3s;
+                opacity: 0.6;
+                cursor: pointer;
+                .card-title {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    font-weight: 600;
+                }
+                .card-text {
+                    transition: opacity 0.3s;
+                    opacity: 0;
+                    font-size: 0.9em;
+                    margin-top: 15px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+            &:hover {
+                transition: 0.2s;
+                max-height: 100%;
+                .card-body {
+                    transition: opacity 0.3s;
+                    opacity: 0.9;
+                    .card-text {
+                        transition: opacity 0.3s;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

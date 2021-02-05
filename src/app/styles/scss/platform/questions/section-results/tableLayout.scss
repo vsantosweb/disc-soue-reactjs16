@@ -1,0 +1,45 @@
+$dColor :rgba($color: #00800033, $alpha: .5);
+$iColor :rgba($color: #ff0000, $alpha: .5);
+$sColor :rgba($color: #800080, $alpha: .5);
+$cColor :rgba($color: #ffff00, $alpha: .5);
+
+.result .intensity .tableLayout{
+    table{
+        font-weight: 600;
+        th,td{
+            border: 1px solid black;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            &.dPaint{
+                background-color: $dColor;
+            }
+            &.iPaint{
+                background-color: $iColor;
+            }
+            &.sPaint{
+                background-color: $sColor;
+            }
+            &.cPaint{
+                background-color: $cColor;
+            }
+        }
+        thead tr {
+            th{
+                border: 1px solid black;
+                font-size: 1.5em;
+                &.d{
+                    background-color: $dColor;
+                }
+                &.i{
+                    background-color: $iColor;
+                }
+                &.s{
+                    background-color: $sColor;
+                }
+                &.c{
+                    background-color: $cColor;
+                }
+            }
+        }
+    }
+}

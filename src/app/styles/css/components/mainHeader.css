@@ -1,0 +1,19 @@
+.mainHeader .platformSection .content {
+  padding: 3rem 85px 0 85px !important;
+}
+.mainHeader .platformSection .content .titles h4 {
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 52px;
+  margin-bottom: -22px;
+}
+.mainHeader .platformSection .content .titles h3 {
+  font-size: 85px;
+  margin-bottom: 15px;
+}
+.mainHeader .platformSection .content .titles p {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+/*# sourceMappingURL=mainHeader.css.map */

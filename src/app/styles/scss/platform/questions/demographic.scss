@@ -1,0 +1,23 @@
+.demographic{
+    .content{
+        .userProfile{
+            margin: 50px auto -100px auto!important;
+            width: 400px!important;
+        }
+        .texts{
+            padding: 25px;
+            p{
+                color: black!important;
+                opacity: .5;
+            }
+        }
+    }
+    &.tutorial{
+        h2{
+            font-weight: 600;
+        }
+        li{
+            margin-bottom: 15px;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+/* HAVES1 */
+@keyframes moveWave1 {
+    from {
+      transform: translateX(-750px);
+    }
+  }
+  @keyframes moveWave2 {
+    from {
+      transform: translateX(-650px);
+    }
+  }
+  @keyframes moveWave3 {
+    from {
+      transform: translateX(-550px);
+    }
+  }
+  /* WAVES2 */
+  @keyframes platformSectionMoveWave1 {
+    from {
+      transform: translateX(750px);
+    }
+  }
+  @keyframes platformSectionMoveWave2 {
+    from {
+      transform: translateX(650px);
+    }
+  }
+  @keyframes platformSectionMoveWave3 {
+    from {
+      transform: translateX(550px);
+    }
+  }

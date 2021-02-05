@@ -1,0 +1,56 @@
+.result .hero .header {
+  margin-bottom: 100px;
+  padding: 100px 50px 0 50px;
+}
+.result .hero .header h3 {
+  font-size: 3.5em;
+  font-weight: 600;
+  margin-bottom: -15px;
+  color: #2960A2;
+}
+.result .hero .header img {
+  width: 500px;
+}
+@media (max-width: 768px) {
+  .result .hero .header img {
+    width: 100%;
+  }
+}
+.result .hero .logoPM {
+  width: 170px;
+}
+.result .hero .contacts {
+  padding-top: 70px;
+}
+.result .hero .contacts h2, .result .hero .contacts span {
+  font-weight: 600;
+  margin-bottom: -5px;
+}
+.result .hero .contacts span {
+  opacity: 0.7;
+}
+.result .hero .contacts .texts p, .result .hero .contacts a {
+  margin-bottom: -5px;
+  color: black !important;
+  font-weight: 400;
+}
+.result .hero footer {
+  padding: 0;
+  min-height: 300px;
+}
+.result .hero footer .waves {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.result .hero footer .waves path {
+  transform: scaleX(2) translateX(-15px);
+}
+.result .hero footer .waves .st1 {
+  fill: #2960A2;
+}
+.result .hero footer .waves .st0 {
+  fill: #F7310F;
+}
+
+/*# sourceMappingURL=hero.css.map */

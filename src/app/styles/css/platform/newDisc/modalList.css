@@ -1,0 +1,41 @@
+.modalList .modal-content {
+  border-radius: 15px;
+  border: none;
+}
+.modalList .modal-content .modal-header {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.modalList .modal-content .modal-header span {
+  color: white;
+}
+.modalList .modal-content .modal-body h4,
+.modalList .modal-content .modal-body small {
+  font-weight: 600;
+}
+.modalList .modal-content .modal-body h4,
+.modalList .modal-content .modal-body p {
+  opacity: 0.8;
+}
+.modalList .modal-content .modal-body .bodyHeader small {
+  background-color: #cccccc54;
+  padding: 8px;
+  border-radius: 15px;
+}
+.modalList .modal-content .modal-body .newRespondents form .input-group-text {
+  border-radius: 5px 0 0 5px;
+}
+.modalList .modal-content .modal-body .newRespondents form .form-control {
+  padding: 5px;
+  height: 50px;
+  border-radius: 0 5px 5px 0;
+}
+.modalList .modal-content .modal-footer {
+  border: none;
+}
+.modalList .modal-content .modal-footer #createList {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/*# sourceMappingURL=modalList.css.map */

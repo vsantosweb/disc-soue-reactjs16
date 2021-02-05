@@ -1,0 +1,19 @@
+.demographic .content .userProfile {
+  margin: 50px auto -100px auto !important;
+  width: 400px !important;
+}
+.demographic .content .texts {
+  padding: 25px;
+}
+.demographic .content .texts p {
+  color: black !important;
+  opacity: 0.5;
+}
+.demographic.tutorial h2 {
+  font-weight: 600;
+}
+.demographic.tutorial li {
+  margin-bottom: 15px;
+}
+
+/*# sourceMappingURL=demographic.css.map */

@@ -1,0 +1,23 @@
+.mainHeader{
+    .platformSection {
+        .content {
+            padding: 3rem 85px 0 85px!important;
+            .titles {
+                h4 {
+                    text-transform: capitalize;
+                    font-weight: 400;
+                    font-size: 52px;
+                    margin-bottom: -22px;
+                }
+                h3 {
+                    font-size: 85px;
+                    margin-bottom: 15px;
+                }
+                p {
+                    font-size: 28px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}

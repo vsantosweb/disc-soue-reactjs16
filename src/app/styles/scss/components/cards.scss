@@ -1,0 +1,76 @@
+@use 'sass:map';
+@import "../variables.scss";
+
+.dashboardCard {
+    cursor: pointer;
+    min-height: 300px;
+    border-radius: $border-radius;
+    overflow: hidden;
+    position: relative;
+    .content {
+        padding: 25px;
+        h2 {
+            text-align: center;
+            font-size: 120px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .sub {
+            transition: bottom 0.3s;
+            position: absolute;
+            bottom: 0px;
+            h3 {
+                font-size: 45px;
+                font-weight: 600;
+                margin: 0;
+            }
+            small {
+                transition: opacity 0.3s;
+                opacity: 0;
+            }
+        }
+    }
+    &:hover {
+        animation: bounce-card infinite 2s;
+        .content .sub {
+            transition: bottom 0.3s;
+            bottom: 15px;
+            small {
+                transition: opacity 0.3s;
+                opacity: 1;
+            }
+        }
+    }
+    svg {
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+        width: 100%;
+    }
+}
+@media (max-width: 993px) {
+    #primary {
+        background-color: map-get($theme-colors, "primary");
+    }
+    #secondary {
+        background-color: map-get($theme-colors, "secondary");
+    }
+    #magenta {
+        background-color: map-get($theme-colors, "magenta");
+    }
+}
+
+@keyframes bounce-card {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}

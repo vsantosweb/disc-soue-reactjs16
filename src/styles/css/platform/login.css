@@ -1,0 +1,132 @@
+body {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+.login {
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+.login .loginArea {
+  height: 100%;
+  width: calc(100% - 65%);
+  display: flex;
+  align-items: center;
+}
+.login .loginArea .content {
+  width: 100%;
+  padding: 0 100px 0 100px;
+}
+.login .loginArea .content .titles {
+  margin-bottom: 50px;
+}
+.login .loginArea .content .titles .title {
+  font-size: 50px;
+  opacity: 0.85;
+}
+.login .loginArea .content .titles .subTitle {
+  opacity: 0.85;
+  font-weight: 600;
+}
+.login .content .subForms {
+  margin-bottom: 35px;
+}
+.login .heroTitles {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  width: 65%;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  z-index: -1;
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  text-align: center;
+}
+.login .heroTitles .content {
+  color: white;
+  padding: 25px;
+  position: relative;
+  max-width: 70%;
+  left: 20%;
+}
+.login .heroTitles .content .title {
+  font-size: 70px;
+  margin-bottom: 45px;
+  font-weight: 400;
+}
+.login .heroTitles .content .subTitle {
+  font-size: 28px;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+.login .heroTitles .content .text {
+  font-size: 17px;
+}
+
+.textFont1 {
+  font-weight: 600;
+}
+
+#eyeIcon {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+@media (max-width: 1550px) {
+  .login .loginArea .content {
+    padding: 0 50px 0 50px;
+  }
+}
+@media (max-width: 1330px) {
+  .login .loginArea {
+    width: calc(100% - 60%);
+  }
+  .login .loginArea .content {
+    padding: 0 40px 0 40px;
+  }
+  .login .heroTitles {
+    width: 60%;
+  }
+  .login .heroTitles .content {
+    color: white;
+    padding: 25px;
+    position: relative;
+    max-width: 70%;
+    left: 25%;
+  }
+}
+@media (max-width: 1110px) {
+  .login .loginArea {
+    width: 100%;
+  }
+  .login .loginArea .content {
+    width: 700px;
+    margin: 0 auto;
+  }
+  .login .heroTitles {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  form .form-check .checkbox {
+    font-size: 0.8em;
+    opacity: 0.5;
+  }
+  form .themeLink {
+    font-size: 0.8em;
+    opacity: 0.5;
+  }
+
+  .login form .form-check .checkbox {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=login.css.map */

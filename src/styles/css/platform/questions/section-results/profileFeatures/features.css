@@ -1,0 +1,29 @@
+.result .profile .features {
+  margin-top: 25px;
+}
+.result .profile .features .featuresTable {
+  padding: 0;
+  margin-top: 15px;
+}
+.result .profile .features .featuresTable .featureTitle {
+  background-color: #F7310F;
+  color: white;
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.result .profile .features .featuresTable ul {
+  padding-top: 0;
+}
+.result .profile .features .featuresTable:first-child {
+  border-right: 3px solid #F7310F;
+}
+.result .profile .features .featuresTable li {
+  padding: 5px 30px;
+  align-self: center;
+}
+.result .profile .features .featuresTable li:nth-child(even) {
+  background-color: rgba(247, 49, 15, 0.2);
+}
+
+/*# sourceMappingURL=features.css.map */

@@ -1,0 +1,37 @@
+.result .chartResults ul {
+  list-style-type: none;
+}
+.result .chartResults .resultTable {
+  border: none;
+  font-weight: 600;
+}
+.result .chartResults .resultTable thead tr th {
+  background-color: rgba(79, 165, 211, 0.7);
+  border: 2px solid #4fa5d3;
+  text-align: center;
+}
+.result .chartResults .resultTable thead tr th:first-child {
+  background-color: transparent;
+  border: none;
+}
+.result .chartResults .resultTable tbody tr td {
+  border: 2px solid #4fa5d3;
+  text-align: center;
+}
+.result .chartResults .resultTable tbody tr td.count {
+  background-color: #4fa5d3;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+.result .chartResults .resultTable tbody tr:last-child td:last-child {
+  background-color: rgba(79, 165, 211, 0.7);
+}
+@media print {
+  .result .chartResults .resultTable tbody tr:last-child td:last-child {
+    background-color: rgba(79, 165, 211, 0.7);
+  }
+}
+
+/*# sourceMappingURL=chartPoints.css.map */

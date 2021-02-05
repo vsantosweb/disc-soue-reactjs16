@@ -1,0 +1,50 @@
+.yourList .cardsContainer {
+  min-height: 400px;
+}
+.yourList .containerCard {
+  min-height: 150px;
+}
+.yourList .containerCard .card {
+  transition: 0.2s;
+  max-height: 100px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.02);
+  border: none;
+}
+.yourList .containerCard .card.checked {
+  border: 3px solid #F6B87E;
+}
+.yourList .containerCard .card .card-body {
+  transition: opacity 0.3s;
+  opacity: 0.6;
+  cursor: pointer;
+}
+.yourList .containerCard .card .card-body .card-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 600;
+}
+.yourList .containerCard .card .card-body .card-text {
+  transition: opacity 0.3s;
+  opacity: 0;
+  font-size: 0.9em;
+  margin-top: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.yourList .containerCard .card:hover {
+  transition: 0.2s;
+  max-height: 100%;
+}
+.yourList .containerCard .card:hover .card-body {
+  transition: opacity 0.3s;
+  opacity: 0.9;
+}
+.yourList .containerCard .card:hover .card-body .card-text {
+  transition: opacity 0.3s;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=newDisc.css.map */

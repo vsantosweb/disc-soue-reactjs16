@@ -1,0 +1,9 @@
+@import './variables.scss';
+.result .yd{
+    .titlePage.disc{
+        svg line, span{
+            stroke: $background-secondary;
+            background-color: $background-secondary;
+        }
+    }
+}

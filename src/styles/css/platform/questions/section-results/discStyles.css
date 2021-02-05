@@ -1,0 +1,22 @@
+.result .discStyles {
+  overflow: hidden;
+  font-weight: 600;
+}
+.result .discStyles span {
+  color: #F7310F;
+}
+.result .discStyles .texts {
+  padding: 50px;
+  padding-bottom: 0;
+}
+.result .discStyles ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.result .discStyles .grid ul {
+  padding: 20px;
+  background-color: #569ce227;
+  min-height: 100%;
+}
+
+/*# sourceMappingURL=discStyles.css.map */

@@ -1,0 +1,51 @@
+.result .titlePage svg {
+  height: 15px;
+}
+.result .titlePage svg line {
+  stroke: #4C97BE;
+  stroke-width: 7px;
+  transform: translateX(-27px);
+}
+.result .titlePage .title {
+  margin-top: 25px;
+}
+.result .titlePage .title svg {
+  width: 100px;
+  align-self: center;
+  margin-right: -30px;
+  padding-top: 5px;
+}
+.result .titlePage .title span {
+  background-color: #4C97BE;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2em;
+  border-radius: 50px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+.result .titlePage .subtitle {
+  padding-left: 80px;
+  margin-top: 30px;
+}
+.result .titlePage .subtitle .title {
+  margin-top: 0;
+}
+.result .titlePage .subtitle .title span {
+  background-color: #F7310F;
+  font-size: 1em;
+}
+.result .titlePage .subtitle.inline {
+  font-size: 1.2em;
+  padding-left: 40px;
+}
+.result .titlePage .subtitle.inline svg {
+  position: absolute;
+  right: 0;
+  align-self: center;
+}
+.result .titlePage .subtitle.inline svg line {
+  stroke: #F7310F;
+}
+
+/*# sourceMappingURL=titlePage.css.map */

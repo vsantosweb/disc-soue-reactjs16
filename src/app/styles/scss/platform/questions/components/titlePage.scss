@@ -1,0 +1,53 @@
+@import '../section-results/variables.scss';
+
+.result .titlePage{
+    svg{
+        height: 15px;
+    }
+    svg line{
+        stroke: $text-primary;
+        stroke-width: 7px;
+        transform: translateX(-27px);
+    }
+    .title{
+        margin-top: 25px;
+        svg{
+            width: 100px;
+            align-self: center;
+            margin-right: -30px;
+            padding-top: 5px;
+        }
+        span{
+            background-color: $text-primary;
+            color: white;
+            font-weight: 600;
+            font-size: 1.2em;
+            border-radius: 50px;
+            padding: 5px 10px;
+            text-transform: uppercase;
+        }
+    }
+    .subtitle{
+        padding-left: 80px;
+        margin-top: 30px;
+        .title{
+            margin-top: 0;
+            span{
+                background-color: $background-secondary;
+                font-size: 1em;
+            }
+        }
+        &.inline{
+            font-size: 1.2em;
+            padding-left: 40px;
+            svg{
+                position: absolute;
+                right: 0 ;
+                align-self: center;
+                line{
+                    stroke: $background-secondary;
+                }
+            }
+        }
+    }
+}

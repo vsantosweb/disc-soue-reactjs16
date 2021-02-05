@@ -11,7 +11,6 @@ import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { Route, Switch, BrowserRouter, Redirect } from 'react-router-dom';
 
-
 import Routes from './routes';
 
 import Authenticator from './authenticator';
@@ -50,7 +49,6 @@ export default function App(props) {
 
     }, [pageInfo, layout])
 
-    useEffect(() => { redirectIfAuthenticated() }, [])
 
     const getRoutes = () => {
         const RouteChildren = Routes.filter(route => route.children !== undefined).map(route => route.children);

@@ -1,0 +1,31 @@
+@use "sass:map";
+@import "../../variables.scss";
+
+.consultation .platformSection .content .customTable {
+
+    .pagination {
+        z-index: 0;
+        .page-item a,
+        .page-item span {
+            border-radius: 5px;
+        }
+        .page-item a {
+            border-color: map-get($theme-texts, "secondary");
+            color: map-get($theme-colors, "secondary");
+            opacity: .7;
+            &:focus{
+                box-shadow: none;
+            }
+            &:hover{
+                background-color: initial;
+                opacity: 1;
+            }
+        }
+        .page-item.active span {
+            background-color: map-get($theme-colors, "secondary");
+            border-color: map-get($theme-colors, "secondary");
+            margin: 0 15px;
+        }
+        
+    }
+}

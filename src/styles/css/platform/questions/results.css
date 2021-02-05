@@ -1,0 +1,24 @@
+.result {
+  background-color: #f9f9f9;
+}
+.result p {
+  font-weight: 600;
+  opacity: 0.9;
+}
+.result .breakPage {
+  clear: both;
+  page-break-after: always;
+}
+
+.report #btnPrint {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+}
+@media print {
+  .report #btnPrint {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=results.css.map */

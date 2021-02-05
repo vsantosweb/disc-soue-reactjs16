@@ -1,0 +1,38 @@
+.result .intensity .tableLayout table {
+  font-weight: 600;
+}
+.result .intensity .tableLayout table th, .result .intensity .tableLayout table td {
+  border: 1px solid black;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.result .intensity .tableLayout table th.dPaint, .result .intensity .tableLayout table td.dPaint {
+  background-color: rgba(0, 128, 0, 0.5);
+}
+.result .intensity .tableLayout table th.iPaint, .result .intensity .tableLayout table td.iPaint {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+.result .intensity .tableLayout table th.sPaint, .result .intensity .tableLayout table td.sPaint {
+  background-color: rgba(128, 0, 128, 0.5);
+}
+.result .intensity .tableLayout table th.cPaint, .result .intensity .tableLayout table td.cPaint {
+  background-color: rgba(255, 255, 0, 0.5);
+}
+.result .intensity .tableLayout table thead tr th {
+  border: 1px solid black;
+  font-size: 1.5em;
+}
+.result .intensity .tableLayout table thead tr th.d {
+  background-color: rgba(0, 128, 0, 0.5);
+}
+.result .intensity .tableLayout table thead tr th.i {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+.result .intensity .tableLayout table thead tr th.s {
+  background-color: rgba(128, 0, 128, 0.5);
+}
+.result .intensity .tableLayout table thead tr th.c {
+  background-color: rgba(255, 255, 0, 0.5);
+}
+
+/*# sourceMappingURL=tableLayout.css.map */

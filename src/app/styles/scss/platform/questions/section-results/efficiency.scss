@@ -1,0 +1,24 @@
+@import './variables.scss';
+
+.result .profile .efficiency .features{
+    border-top: 2px solid $background-secondary;
+    // padding-top: 15px;
+    span{
+        color: $background-secondary;
+        font-weight: 600;
+        background-color: #f9f9f9;
+        padding-right: 10px;
+        top: -17px;
+        position: relative;
+        font-size: 1.1em;
+    }
+    .texts{
+        p{
+            font-weight: 400;
+        }
+        ul{
+            font-weight: 600;
+            padding: 0;
+        }
+    }
+}

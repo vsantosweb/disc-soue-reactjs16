@@ -1,0 +1,43 @@
+.profile {
+	.platformSection.form {
+		.content {
+			.userProfile {
+				width: 250px;
+				height: 250px;
+				background-color: #F3F3F3;
+				border-radius: 50%;
+				position: relative;
+				margin: 0 auto -70px auto;
+				top: -100px;
+			}
+		}
+		#btn-save{
+			display: none;
+		}
+		#btn-cancel{
+			display: none;
+		}
+	}
+}
+@media (max-width:1550px) {
+	.profile {
+		.platformSection {
+			.content {
+				.titles {
+					padding-bottom: 50px;
+				}
+			}
+		}
+	}
+}
+@media (max-width:920px) {
+	.profile {
+		.platformSection {
+			.content {
+				.titles {
+					padding-bottom: 75px;
+				}
+			}
+		}
+	}
+}

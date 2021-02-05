@@ -1,0 +1,32 @@
+.result .profile .discStyle .titlePage.disc svg line {
+  stroke: #F7310F;
+}
+.result .profile .discStyle .titlePage.disc span {
+  background-color: #F7310F;
+}
+.result .profile .discStyle .texts {
+  padding: 25px 50px;
+}
+.result .profile .discStyle .texts p {
+  font-weight: 400;
+}
+.result .profile .discStyle .texts .footer p {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+.result .profile .discStyle .texts .footer .priority {
+  color: #F7310F;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.result .profile .discStyle .texts .footer .priority span {
+  padding: 0 5px;
+}
+.result .profile .discStyle .texts .footer .priority span:first-child {
+  border-right: 2px solid #F7310F;
+}
+.result .profile .discStyle .texts .footer .priority span:last-child {
+  border-left: 2px solid #F7310F;
+}
+
+/*# sourceMappingURL=discStyle.css.map */
