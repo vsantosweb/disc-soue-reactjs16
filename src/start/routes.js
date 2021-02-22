@@ -15,6 +15,10 @@ import Login from '../app/pages/auth/login';
 import CustomerIndex from '../app/pages/customers/CustomerIndex';
 import CustomerShow from '../app/pages/customers/CustomerShow';
 import Error404 from '../app/pages/errors/404';
+import DiscSession from '../app/pages/disc/DiscSession';
+import DiscIndex from '../app/pages/disc/DiscIndex';
+import DiscDemograph from '../app/pages/disc/DiscDemograph';
+import DiscQuestions from '../app/pages/disc/DiscQuestions';
 
 
 const routes = [
@@ -65,6 +69,47 @@ const routes = [
     private: true,
     exact: false,
     layout: 'AppLayout',
+  },
+  {
+    path: '/disc',
+    name: 'Disc',
+    icon: null,
+    component: DiscIndex,
+    private: false,
+    exact: true,
+    layout: 'AppLayout',
+    children: [
+      {
+        path: '/disc/session/:token/:disc_uuid',
+        name: 'contato',
+        icon: null,
+        component: DiscSession,
+        private: false,
+        exact: true,
+        layout: 'AppLayout',
+
+      },
+      {
+        path: '/disc/pesquisa-demografica',
+        name: 'Pesquisa Demográfica',
+        icon: null,
+        component: DiscDemograph,
+        private: false,
+        exact: true,
+        layout: 'AppLayout',
+
+      },
+      {
+        path: '/disc/avaliacao',
+        name: 'Avaliação',
+        icon: null,
+        component: DiscQuestions,
+        private: false,
+        exact: true,
+        layout: 'AppLayout',
+
+      }
+    ]
   },
 ];
 

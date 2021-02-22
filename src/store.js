@@ -6,10 +6,12 @@ import { persistStore, persistReducer } from 'redux-persist';
 import LayoutReducer from './app/layouts/reducer';
 import CustomerReducer from './app/pages/customers/reducer';
 import storage from 'redux-persist/lib/storage/session';
+import DiscReducer from './app/pages/disc/redux';
 
-const reducers = combineReducers({ 
-    layout:LayoutReducer,
-    customer:CustomerReducer
+const reducers = combineReducers({
+    layout: LayoutReducer,
+    customer: CustomerReducer,
+    disc: DiscReducer
 });
 
 const persistConfig = {

@@ -31,7 +31,6 @@ export default class Authenticator {
                 Authenticator.setSession('cookie', response.data.data);
                 window.location.reload();
                 return response.data
-
             })
             .catch(error => error.response)
 

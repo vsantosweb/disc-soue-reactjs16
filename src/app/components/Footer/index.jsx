@@ -1,9 +1,10 @@
 import React from 'react';
+import * as F from './styles';
 
 export default function Footer(props) {
     return (
-        <footer className={`bg-${props.color||'secondary'} ${props.layout}`}>
+        <F.Container>
             <h3>Informações para footer</h3>
-        </footer>
+        </F.Container>
     )
 }

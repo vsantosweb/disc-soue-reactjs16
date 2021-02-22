@@ -9,7 +9,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import { Route, Switch, BrowserRouter, Redirect } from 'react-router-dom';
+import { Route, Switch, BrowserRouter } from 'react-router-dom';
 
 import Routes from './routes';
 
@@ -101,9 +101,7 @@ export default function App(props) {
 
         let compiledRoutes = getRoutes().map(ViewRoute => {
             return (
-                <Route key={ViewRoute.path} layout={ViewRoute.layout} exact={ViewRoute.exact} path={ViewRoute.path}>
-                    <ViewRoute.component layout={setLayout} pageConfig={pageConfig} />
-                </Route>
+                <Route key={ViewRoute.path} layout={ViewRoute.layout} exact={ViewRoute.exact} path={ViewRoute.path} render={(props) => <ViewRoute.component layout={setLayout} pageConfig={pageConfig} {...props} />} />
             )
         })
 

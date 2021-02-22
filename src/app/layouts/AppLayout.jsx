@@ -19,11 +19,13 @@ export default function AppLayout({ children }) {
     }, []);
 
     return (
-        <div style={{height: '100%', display:'flex', justifyContent: 'space-evenly', flexDirection: 'column'}}>
+        <React.Fragment>
             <Navbar />
-            {children}
+            <div style={{ minHeight: '100%',  height: 'auto' }}>
+                {children}
+            </div>
             <Footer />
-        </div>
+        </React.Fragment>
     )
 }
 

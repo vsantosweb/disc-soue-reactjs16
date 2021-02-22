@@ -10,7 +10,7 @@ function LoaderTracker({area, fullContent = true, ...rest}) {
     return (
         promiseInProgress && (
             <Loader.Container fullContent={fullContent}>
-                <Spinner size={'sm'} animation={'border'} />
+                <Spinner size={fullContent ? 'md' : 'sm'} animation={'border'} />
             </Loader.Container>
         )
 
