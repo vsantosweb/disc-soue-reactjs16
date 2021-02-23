@@ -14,7 +14,7 @@ const discLetterScores = { 'D': 0, 'I': 0, 'S': 0, 'C': 0, 'N': 0 };
 const calcGraphDiff = (more, less) => {
 
     let graph = Object.assign({}, discLetterScores);
-    console.log(more, 'moreeeeee')
+
     for (let key in discLetterScores) {
 
         graph[key] = more[key] - less[key]
@@ -40,17 +40,15 @@ const incrementLetterCount = (letters) => {
 
 export default function DiscQuestions() {
 
-    const [questionsData, setQuestionsData] = useState([]);
     const [score, setScore] = useState([]);
     const [disableSubmit, setDisableSubmit] = useState(true);
     const [step, setStep] = useState(0);
-    const [steps, setSteps] = useState([]);
 
     let currentStep = useSelector(state => state.disc.currentStep);
     let session = useSelector(state => state.disc.session);
     let questions = useSelector(state => state.disc.questions || []);
 
-    const lastStepIndex = steps.length - 1;
+    const lastStepIndex = questions.length - 1;
     const isLastStep = lastStepIndex === currentStep;
     let dispatch = useDispatch();
 
@@ -60,10 +58,8 @@ export default function DiscQuestions() {
             less: 'required'
         })
     )
-    console.log(questions, 'reducer')
+    
     useEffect(() => {
-
-        if (step === 0 && !currentStep) dispatch({ type: 'SET_CURRENT_STEP', payload: 0 });
 
         getQuestions().then((response) => {
             let questionsData = [];
@@ -73,12 +69,10 @@ export default function DiscQuestions() {
                 questionsData.push(response.data[i]);
             }
 
-            //testing
-            setQuestionsData([questions[0], questions[1], questions[2]]);
-            if(questions.length === 0) dispatch({ type: 'SET_DISC_QUESTIONS', payload: questionsData });
-
-
+            if (step === 0 && !currentStep) dispatch({ type: 'SET_CURRENT_STEP', payload: 0 });
+            if (questions.length === 0) dispatch({ type: 'SET_DISC_QUESTIONS', payload: questionsData });
         })
+
     }, [])
 
     const handleInput = (e, questionOption, row) => {
@@ -98,7 +92,7 @@ export default function DiscQuestions() {
         }
 
         e.target.checked = true;
-        scoreData[e.target.name] = e.target.value;
+        scoreData[e.target.name] = { id: e.target.id, letter: e.target.value, };
         setScore(scoreData);
         let validator = formRules(scoreData);
 
@@ -108,8 +102,8 @@ export default function DiscQuestions() {
         }
 
         let json = Object.assign([], questions);
+        questionOption.answers = { ...scoreData };
 
-        questionOption.answers = scoreData;
         questionOption.isValid = true;
         json[questionOption.id - 1] = questionOption
 
@@ -117,7 +111,7 @@ export default function DiscQuestions() {
         setDisableSubmit(false);
 
     }
-    
+
     const handleSubmitNextQuestion = (e) => {
 
         e.preventDefault();
@@ -132,7 +126,7 @@ export default function DiscQuestions() {
 
         e.preventDefault();
 
-        const answers = steps.map(step => step.answers);
+        const answers = questions.map(question => question.answers);
         console.log(questions, 'kosadksoa')
 
         for (let question of questions) {
@@ -145,8 +139,8 @@ export default function DiscQuestions() {
             }
         }
 
-        let more = answers.map(answer => answer.more);
-        let less = answers.map(answer => answer.less);
+        let more = questions.map(question => question.answers.letter);
+        let less = questions.map(question => question.answers.letter);
 
         let graphLess = incrementLetterCount(less);
         let graphMore = incrementLetterCount(more)
@@ -159,7 +153,6 @@ export default function DiscQuestions() {
         session.session_data.items[0].graphLetters = graphLess;
         session.session_data.items[1].graphLetters = graphMore;
         session.session_data.items[2].graphLetters = graphDiff;
-
 
         finishSession({
 
@@ -182,11 +175,11 @@ export default function DiscQuestions() {
                         <p>{option.description}</p>
                         <label>
                             <span>Mais</span>
-                            <input className={'options'} id={'more'} type={'radio'} row={key} name={'more'} onChange={(el) => handleInput(el, question, key)} value={option.more} />
+                            <input className={'options'} id={option.id} type={'radio'} row={key} name={'more'} onChange={(el) => handleInput(el, question, key)} value={option.more} />
                         </label>
                         <label>
                             <span>Menos</span>
-                            <input className={'options'} id={'less'} type={'radio'} row={key} name={'less'} onChange={(el) => handleInput(el, question, key)} value={option.less} />
+                            <input className={'options'} id={option.id} type={'radio'} row={key} name={'less'} onChange={(el) => handleInput(el, question, key)} value={option.less} />
                         </label>
                     </div>
                 })}
@@ -200,6 +193,7 @@ export default function DiscQuestions() {
     return (
         <React.Fragment>
             {getSteps[currentStep]}
+            <span>{currentStep + 1} / {questions.length}</span>
         </React.Fragment>
     )
 }
